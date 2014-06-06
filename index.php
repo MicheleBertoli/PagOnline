@@ -20,8 +20,8 @@ if (!class_exists('pagonline_loader'))
 
 		public function __construct()
 		{
-			$this->source = dirname(__file__) . '/pagonline.php';
-			$this->destination = dirname(dirname(__file__)) . '/wp-e-commerce/wpsc-merchants/pagonline.php';	
+			$this->source = WP_PLUGIN_DIR . '/pagonline/pagonline.php';
+			$this->destination = WP_PLUGIN_DIR . '/wp-e-commerce/wpsc-merchants/pagonline.php';	
 		}
 
 		public function load()
